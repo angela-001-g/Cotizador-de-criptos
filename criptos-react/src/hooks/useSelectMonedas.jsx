@@ -1,11 +1,15 @@
+/* eslint-disable react-refresh/only-export-components */
+import styled from '@emotion/styled'
 
+const Label = styled.label`
+    color: #FFF;
+`
 
-const useSelectMonedas = () => {
+const useSelectMonedas = (label) => {
 
     const SelectMonedas = () => (
         <>
-            <label>Select Monedas</label>
-            <label>Seleccionar pais </label>
+            <Label>{label}</Label>
         </>
     )
 
